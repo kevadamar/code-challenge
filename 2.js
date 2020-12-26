@@ -1,14 +1,14 @@
-function Count_vowels(text){
-//keva
-  let countVokal = 0
-  const vokal = ['a','i','u','e','o']
-  for(let i = 0;i<text.length;i++){
-    if(vokal.includes(text[i])){
-      countVokal++
+function isiArray(param1,param2) {
+  let init = 2;
+  let arr = [];
+  for(let i = 0; i < param1; i++){
+    for(let j = 0; j < param2; j++){
+      arr.push(`${init} `);
+      init += 6;
     }
+    arr.push("\n");
   }
-
-  return countVokal
+  return arr.join("");
 }
-const param = 'programmer'
-Count_vowels(param)
+
+isiArray(3,5);
