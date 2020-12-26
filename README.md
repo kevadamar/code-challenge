@@ -1,5 +1,12 @@
 # code-challenge
 
-# Untuk menjalankan 1.js dan 2.js dapat menggunakan editor online https://repl.it/
+# Penyelesaian Soal DumbWays
 
-# Untuk Query SQL di sarankan menggunakan PHPMyAdmin atau heidaSQL untuk mencoba script yang ada didalam file 4A.sql
+## Jawaban dari soal DumbWays:
+
+  * Penyelesaian Soal No. 1 sampai 3. Dapat di coba dengan https://repl.it/;
+  * Penyelesaian Soal No. 4a. Dapat di coba pada terminal/CMD MySQL
+## Screenshot query
+![ss1](https://github.com/kevadamar/code-challenge/blob/master/ss4a1.png)
+![ss2](https://github.com/kevadamar/code-challenge/blob/master/ss4a2.png)
+
