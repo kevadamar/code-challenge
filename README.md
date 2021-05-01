@@ -1,13 +1,11 @@
-# code-challenge
-
-# Penyelesaian Soal DumbWays
+# Penyelesaian Soal Test DumbWays
 
 ## Jawaban dari soal DumbWays:
 
   * Penyelesaian Soal No. 1 sampai 3. Dapat di coba dengan https://repl.it;
-  * Penyelesaian Soal No. 4a. Dapat di coba pada terminal/CMD MySQL
+  * Penyelesaian Soal No. 4A. Dapat di coba pada terminal/CMD MySQL
 ## Screenshot query
-![ss1](https://github.com/kevadamar/code-challenge/blob/master/ss4a1.png)
-![ss2](https://github.com/kevadamar/code-challenge/blob/master/ss4a2.png)
-
-### Mohon maaf untuk yang nomor 4b belum...
+![ssInsertData](https://github.com/kevadamar/code-challenge/blob/master/4A/Screenshot Insert.png)
+![ssAllDataPokemon](https://github.com/kevadamar/code-challenge/blob/master/4A/Screenshot All Data pokemon_tb.png)
+![ssAllDataWithElement](https://github.com/kevadamar/code-challenge/blob/master/4A/Screenshot All Data pokemon beserta element.png)
+![ssAllDataByElement](https://github.com/kevadamar/code-challenge/blob/master/4A/Screenshot All Data berdasarkan element.png)
