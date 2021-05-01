@@ -1,24 +1,39 @@
-function hitungGaji(nama,gapok,bulan,tunjangan){
-  let flatTunj = (tunjangan ? 500000 : 0);
-  let bpjs = (gapok * (3/100)); // 3% gaji
-  let pajak = (gapok * (5/100)); //5% gaji
-  let totalBersih = ((gapok + flatTunj - (bpjs+pajak)));
-  let totalGaji = totalBersih * bulan;
-  let formatOut = `
-    ===============================
-    Nama Karyawan: ${nama}
-    Gaji Pokok: ${gapok}
-    Tunjangan: ${flatTunj}
-    BPJS: ${bpjs}
-    Pajak: ${pajak}
-    ===============================
-    Gaji bersih: ${totalBersih} / bulan
-    ===============================
-    Total Gaji: ${totalGaji}
+function hitungVoucher(pKodeVoucher, pUangHarga) {
+  let hargaBayar = 0;
+  let kembalian = 0;
+  let totalDiskon = 0;
+  const kodeVoucher = [
+    {
+      namaVoucher: "DumbWaysJos",
+      minBelanja: 50000,
+      maxDiskon: 20000,
+      diskon: 0.211,
+    },
+    {
+      namaVoucher: "DumbWaysMantap",
+      minBelanja: 80000,
+      maxDiskon: 40000,
+      diskon: 30 / 100,
+    },
+  ];
 
-  `;
-  return formatOut;
-
+  kodeVoucher.forEach((e) => {
+    if (e.namaVoucher === pKodeVoucher) {
+      if (pUangHarga >= e.minBelanja) {
+        if (pUangHarga * e.diskon >= e.maxDiskon) {
+          totalDiskon = e.maxDiskon;
+          hargaBayar = pUangHarga - e.maxDiskon;
+          kembalian = pUangHarga - hargaBayar;
+        } else {
+          totalDiskon = pUangHarga * e.diskon;
+          hargaBayar = pUangHarga - totalDiskon;
+          kembalian = pUangHarga - hargaBayar;
+        }
+      } else {
+        hargaBayar = pUangHarga;
+      }
+    }
+  });
+  return `Uang yang harus dibayar : ${hargaBayar}\nDiskon : ${totalDiskon}\nKembalian : ${kembalian}`;
 }
-
-hitungGaji("andi",1500000,2,true);
+hitungVoucher("DumbWaysJos", 100000);
